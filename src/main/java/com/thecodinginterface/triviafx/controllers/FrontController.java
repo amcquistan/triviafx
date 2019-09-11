@@ -44,7 +44,7 @@ public class FrontController implements Initializable {
     void showHomeView() {
         try {
             rootStackPane.getChildren().clear();
-            var loader = new FXMLLoader(App.class.getResource("/Home.fxml"));
+            var loader = new FXMLLoader(App.class.getResource("Home.fxml"));
             var pane = (BorderPane) loader.load();
             HomeController homeCtrl = loader.getController();
             homeCtrl.setFrontController(this);
@@ -57,7 +57,7 @@ public class FrontController implements Initializable {
     void showSetupGameView() {
         try {
             rootStackPane.getChildren().clear();
-            var loader = new FXMLLoader(App.class.getResource("/Setup.fxml"));
+            var loader = new FXMLLoader(App.class.getResource("Setup.fxml"));
             var pane = (BorderPane) loader.load();
             SetupController setupCtrl = loader.getController();
             setupCtrl.setFrontController(this);
@@ -82,7 +82,7 @@ public class FrontController implements Initializable {
     void showGameView() {
         try {
             rootStackPane.getChildren().clear();
-            var loader = new FXMLLoader(App.class.getResource("/Game.fxml"));
+            var loader = new FXMLLoader(App.class.getResource("Game.fxml"));
             var pane = (BorderPane) loader.load();
             GameController ctrl = loader.getController();
             ctrl.setFrontController(this);
