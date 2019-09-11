@@ -1,0 +1,51 @@
+
+plugins {
+    // Apply the java plugin to add support for Java
+    id 'java'
+
+    id 'application'
+
+    id 'org.openjfx.javafxplugin' version '0.0.7'
+
+    id 'com.gluonhq.client-gradle-plugin' version '0.0.11'
+}
+
+repositories {
+    mavenCentral()
+}
+
+gluonClient {
+    target = "ios" // uncomment to deploy on iOS
+
+    bundlesList = ["com.thecodinginterface.triviafx.App"]
+    reflectionList = [
+      "javafx.fxml.FXMLLoader",
+      "java.util.ResourceBundle",
+      "com.thecodinginterface.triviafx.controllers.FrontController",
+      "com.thecodinginterface.triviafx.controllers.BaseViewController",
+      "com.thecodinginterface.triviafx.controllers.HomeController",
+      "com.thecodinginterface.triviafx.controllers.SetupController",
+      "javafx.scene.control.AnchorPane",
+      "javafx.scene.control.ScrollPane",
+      "javafx.scene.control.StackPane",
+      "javafx.scene.layout.BorderPane",
+      "javafx.scene.layout.HBox",
+      "javafx.scene.layout.VBox",
+      "javafx.scene.layout.StackPane",
+      "javafx.scene.layout.ToggleButton",
+      "javafx.scene.control.Button",
+      "javafx.scene.control.Label"]
+}
+
+javafx {
+    version = "12"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.5'
+    testImplementation 'junit:junit:4.12'
+}
+
+// Define the main class for the application
+mainClassName = "com.thecodinginterface.triviafx.App"

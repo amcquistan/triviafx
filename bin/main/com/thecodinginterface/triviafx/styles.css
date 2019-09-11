@@ -1,0 +1,73 @@
+.common-background {
+    -fx-background-color:#faf6f6;
+}
+
+
+.main-header-hbox {
+  -fx-background-color: #03a9f4;
+  -fx-padding: 8 20 8 20;
+  -fx-spacing: 10;
+  -fx-alignment: CENTER;
+}
+
+.characteristic-toggle {
+    -fx-border-color: #058ccb;
+    -fx-background-color: #03a9f4;
+    -fx-padding: 10 20 10 20;
+    -fx-border-radius: 0;
+}
+
+.characteristic-toggle:selected, .characteristic-toggle:pressed {
+  -fx-background-color: #0381bb;
+  -fx-font-fill: white;
+}
+
+.sub-header-hbox {
+  -fx-background-color: #84d8ff;
+  -fx-padding: 8 20 8 20;
+  -fx-spacing: 10;
+  -fx-alignment: CENTER;
+}
+
+.header-label {
+  -fx-font-size: 20;
+}
+
+.action-btn {
+  -fx-border-radius: 0;
+  -fx-border-width: 0;
+  -fx-background-color: transparent;
+}
+
+.action-btn:hover, .action-btn:pressed {
+  -fx-background-color: #058ccb;
+}
+
+.setup-item-box {
+  -fx-border-width: 1;
+  -fx-border-color: #03a9f4;
+  -fx-border-radius: 0;
+  -fx-padding: 2 10 2 10;
+  -fx-background-color: #84d8ff;
+}
+
+.setup-item-box:pressed {
+  -fx-background-color: #65a3c1;
+}
+
+.action-btn-start {
+  -fx-border-width: 1;
+  -fx-border-color: #8fa97b;
+  -fx-border-radius: 0;
+  -fx-padding: 2 10 2 10;
+  -fx-background-color: #a4d080;
+  -fx-font-size: 18;
+}
+
+.action-btn-start:pressed {
+  -fx-background-color: #8fa97b;
+}
+
+.game-navigable-btn {
+    -fx-background-color: #000000;
+}

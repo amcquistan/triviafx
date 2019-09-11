@@ -1,0 +1,13 @@
+module com.thecodinginterface.triviafx {
+  requires javafx.controls;
+  requires javafx.fxml;
+  requires java.net.http;
+  requires java.sql;
+  requires gson;
+
+  opens com.thecodinginterface.triviafx to javafx.fxml;
+  opens com.thecodinginterface.triviafx.controllers to javafx.fxml;
+
+  exports com.thecodinginterface.triviafx;
+  exports com.thecodinginterface.triviafx.controllers;
+}
